@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Log In | Debt</title>
+  <link href="style.css" rel="stylesheet" type="text/css" >
+  <style>
+    body{
+      background-color: #121212;
+    }
+    .homebuttons {
+      background: #0066A2;
+      color: #ffffff;
+      border-style: outset;
+      border-color: #0066A2; /* this color can be our main logo color*/
+      border-radius: 25px;
+      height: 50px;
+      width: 180px;
+      font-family: "Georgia", serif;
+      font-size: 25px;
+      text-shadow: 2px 2px #000000;
+    }
+    .homebuttons:hover {
+      background: #005a8e;
+      color: #d8d8d8;
+      border-style: inset;
+      border-color: #005a8e; /* this color can be our main logo color*/
+      border-radius: 25px;
+      height: 50px;
+      width: 180px;
+      font-family: "Georgia", serif;
+      font-size: 25px;
+      text-shadow: 2px 2px #000000;
+    }
+    .loginput {
+      background: #606060;
+      color: white;
+      border-style: groove;
+      border-color: #000000;
+      border-radius: 7px;
+      border-width: 2px;
+      height: 30px;
+      width: 200px;
+      font-family: "Georgia", serif;
+      /*text-shadow: 1px 1px #000000;*/
+    }
+    .loginput:focus {
+      background: #818181;
+      color: white;
+      outline: none;
+      border-style: groove;
+      border-color: #000000;
+      border-radius: 7px;
+      border-width: 3px;
+      text-align: center;
+      height: 30px;
+      width: 200px;
+      font-family: "Georgia", serif;
+      text-shadow: 1px 1px #000000;
+    }
+    
+    #login{
+      border: 2px solid #000000;
+      border-radius: 40px;
+      background-color: #404040;
+      text-align: center;
+      padding: 20px;
+      width: 75%;
+      height: 60%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    #login label{
+      color: #FFFFFF;
+      font-size: 40px;
+      font-family: "Georgia", serif;
+    }
+  </style>
+ <script src="index.js"></script>
+</head>
+
+<body>
+  <div id="login">
+    <form method="post" action="/home">
+      <label for="usr"> Username: </label> <br><br>
+      <!-- "for" above connects to the "usr" ID below, not the name-->
+      <input type="text" class="loginput" id="usr" name="usr"> <br><br><br><br>
+      <label for="pwd"> Password: </label> <br><br>
+      <input type="text" class="loginput" id ="pwd" name="pwd"> <br><br>
+      <input type="submit" class="homebuttons" value="Log In">
+    </form>
+    <br><br>
+    <label> Don't have an account? Sign up Now! </label>
+    <br><br>
+    <form method="post" action="/signup">
+      <input type="submit" class="homebuttons" value="Sign Up">
+    </form>
+  </div>
+
+  <!-- <div id="signup" style="float:left;">
+    
+  </div> -->
+  
+  
+</body>
+
+</html>
